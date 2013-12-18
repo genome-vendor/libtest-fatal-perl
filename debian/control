@@ -1,0 +1,21 @@
+Source: libtest-fatal-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: perl, libtest-simple-perl (>= 0.96),
+  libtry-tiny-perl (>= 0.07)
+Maintainer: Nathaniel Nutter <nnutter@genome.wustl.edu>
+Standards-Version: 3.8.3
+Homepage: http://search.cpan.org/dist/Test-Fatal/
+
+Package: libtest-fatal-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}, libtry-tiny-perl (>= 0.07)
+Description: incredibly simple helpers for testing code with exceptions
+ Test::Fatal is an alternative to the popular Test::Exception. It does much
+ less, but should allow greater flexibility in testing exception-throwing code
+ with about the same amount of typing.
+ .
+ It exports one routine by default: exception.
+ .
+ This description was automagically extracted from the module by dh-make-perl.
